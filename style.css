@@ -189,3 +189,82 @@ blockquote {
 .back-to-top:hover {
   background-color: #e28b5a;
 }
+/* Modern readable font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive horizontal product cards */
+.product-card.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fffefc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+.product-card.horizontal img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.product-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #d97c4c;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+.product-info .price {
+  font-weight: bold;
+  color: #111;
+}
+
+.product-info .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #f4ac7c;
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.product-info .btn:hover {
+  background: #e28b5a;
+}
+
+/* Mobile-friendly */
+@media (max-width: 600px) {
+  .product-card.horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-card.horizontal img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+}
