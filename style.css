@@ -127,3 +127,65 @@ blockquote {
   text-align: center;
   padding: 15px;
 }
+
+/* === Testimonials Section === */
+.testimonials {
+  background-color: #fff8f2;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-left: 5px solid #f4ac7c;
+  padding: 20px;
+  border-radius: 12px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d97c4c;
+}
+
+/* === Hover Effect on Product Cards === */
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === Back to Top Button === */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #f4ac7c;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background-color: #e28b5a;
+}
